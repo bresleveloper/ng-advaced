@@ -10,11 +10,19 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ChcolateComponent } from './comps/routing/chcolate/chcolate.component';
 import { IceCreamComponent } from './comps/routing/ice-cream/ice-cream.component';
+import { JsonAppUserComponent } from './comps/routing/json-app-user/json-app-user.component';
+import { DataTitleComponent } from './comps/routing/data-title/data-title.component';
 
 const routes: Routes = [
   { path: 'chocolate', component: ChcolateComponent },
   { path: 'ice-cream', component: IceCreamComponent },
 
+  { path: 'user/:id', component: JsonAppUserComponent },
+  { 
+    path: 'data-title', 
+    component: DataTitleComponent,
+    data: { shuki: 'Heroes List 2', cow:'moo' } 
+  },
 
   { path: '', redirectTo: '/chocolate', pathMatch: 'full'},
   //{ path: '**', component: PageNotFoundComponent }
