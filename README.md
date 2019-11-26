@@ -1,27 +1,45 @@
 # NgAdvanced
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.15.
 
-## Development server
+in this project we will learn
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* routing 
+* material module
+* directives
+* pipes
+* forms / reactive forms
+* rxjs
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## more resources
 
-## Build
+* basic JS app, ajax - [travel](https://github.com/bresleveloper/db) 
+* basic angular, comps, services - [zoo](https://github.com/bresleveloper/breslev-zoo)
+* css, css3, animations via js and css3 - [slider](https://github.com/bresleveloper/makeAslider)
+* big real app without the topics above - [Jsonplaceholder-app](https://github.com/bresleveloper/Jsonplaceholder-app)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# how to
 
-## Running unit tests
+## routing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+since angular 7 or 6, you just create a new project and say 'y' to routing
 
-## Running end-to-end tests
+the results is a file names `app-routing.module.ts` near your `app.module.ts`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### default routing example
+```const routes: Routes = [
+  { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'hero/:id',      component: HeroDetailComponent },
+  {
+    path: 'heroes',
+    component: HeroListComponent,
+    data: { title: 'Heroes List' }
+  },
+  { path: '',redirectTo: '/heroes',pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent }
 
-## Further help
+];```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## material module
+
+a big pretty module with material design components, here are installation examples
