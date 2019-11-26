@@ -12,10 +12,17 @@ import { ChcolateComponent } from './comps/routing/chcolate/chcolate.component';
 import { IceCreamComponent } from './comps/routing/ice-cream/ice-cream.component';
 import { JsonAppUserComponent } from './comps/routing/json-app-user/json-app-user.component';
 import { DataTitleComponent } from './comps/routing/data-title/data-title.component';
+import { CanActivateIceCreamService } from './services/guards/can-activate-ice-cream.service';
+import { LoginComponent } from './comps/routing/login/login.component';
 
 const routes: Routes = [
+  { path: 'login', component: LoginComponent },
   { path: 'chocolate', component: ChcolateComponent },
-  { path: 'ice-cream', component: IceCreamComponent },
+  { 
+    path: 'ice-cream', 
+    component: IceCreamComponent,
+    canActivate: [CanActivateIceCreamService] 
+  },
 
   { path: 'user/:id', component: JsonAppUserComponent },
   { 
@@ -23,6 +30,7 @@ const routes: Routes = [
     component: DataTitleComponent,
     data: { shuki: 'Heroes List 2', cow:'moo' } 
   },
+  //child route!!
 
   { path: '', redirectTo: '/chocolate', pathMatch: 'full'},
   //{ path: '**', component: PageNotFoundComponent }

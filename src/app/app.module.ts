@@ -7,6 +7,7 @@ import { ChcolateComponent } from './comps/routing/chcolate/chcolate.component';
 import { IceCreamComponent } from './comps/routing/ice-cream/ice-cream.component';
 import { JsonAppUserComponent } from './comps/routing/json-app-user/json-app-user.component';
 import { DataTitleComponent } from './comps/routing/data-title/data-title.component';
+import { LoginComponent } from './comps/routing/login/login.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DataTitleComponent } from './comps/routing/data-title/data-title.compon
     ChcolateComponent,
     IceCreamComponent,
     JsonAppUserComponent,
-    DataTitleComponent
+    DataTitleComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
