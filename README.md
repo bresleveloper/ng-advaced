@@ -10,6 +10,7 @@ in this project we will learn
 * pipes
 * forms / reactive forms
 * rxjs
+* debug angular
 
 
 ## more resources
@@ -42,9 +43,32 @@ the results is a file names `app-routing.module.ts` near your `app.module.ts`
 ];
 ```
 
+see more in our `app-routing.module.ts`
+
 ### router guard
 
+example and implementation in `services/guards/can-activate-ice-cream.service.ts`
+
+#### login guard
+my implementation in `services/guards/login-super-guard.service.ts`
 
 ## material module
 
 a big pretty module with material design components, here are installation examples
+
+## directives
+3 types of directives are:
+
+
+## pipes
+
+
+## debug angular
+
+## rxjs
+
+## forms / reactive forms
+
+
+
+

@@ -24,13 +24,14 @@ const routes: Routes = [
     canActivate: [CanActivateIceCreamService] 
   },
 
-  { path: 'user/:id', component: JsonAppUserComponent },
+  { path: 'user/:moo', component: JsonAppUserComponent },
   { 
     path: 'data-title', 
     component: DataTitleComponent,
     data: { shuki: 'Heroes List 2', cow:'moo' } 
   },
   //child route!!
+  //uppercase
 
   { path: '', redirectTo: '/chocolate', pathMatch: 'full'},
   //{ path: '**', component: PageNotFoundComponent }
