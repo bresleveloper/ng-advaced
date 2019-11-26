@@ -4,6 +4,7 @@
 in this project we will learn
 
 * routing 
+* router-guard 
 * material module
 * directives
 * pipes
@@ -14,7 +15,7 @@ in this project we will learn
 ## more resources
 
 * basic JS app, ajax - [travel](https://github.com/bresleveloper/db) 
-* basic angular, comps, services - [zoo](https://github.com/bresleveloper/breslev-zoo)
+* basic angular, comps, services - [zoo](https://github.com/bresleveloper/breslev-zoo), includes some problems solution, includes how to upload to GitHub Pages (GHP)
 * css, css3, animations via js and css3 - [slider](https://github.com/bresleveloper/makeAslider)
 * big real app without the topics above - [Jsonplaceholder-app](https://github.com/bresleveloper/Jsonplaceholder-app)
 
@@ -36,9 +37,13 @@ the results is a file names `app-routing.module.ts` near your `app.module.ts`
     data: { title: 'Heroes List' }
   },
   { path: '',redirectTo: '/heroes',pathMatch: 'full'},
-  { path: '**', component: PageNotFoundComponent }
+  //{ path: '**', component: PageNotFoundComponent } //or
+  { path: '**', redirectTo: '/heroes', pathMatch: 'full'},
+];
+```
 
-];```
+### router guard
+
 
 ## material module
 
