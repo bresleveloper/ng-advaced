@@ -16,9 +16,14 @@ export class LoginSuperGuardService {
     
     this.router.events.subscribe(routerEvent =>{
       if (routerEvent instanceof NavigationEnd ) {
-        console.log('routerEvent, isLoggedIn: ', this.isLoggedIn);
-        if (this.isLoggedIn == false) {
-          this.router.navigateByUrl('/login')
+        console.log('routerEvent, isLoggedIn: ', 
+          this.isLoggedIn, 
+          this.router.url);
+
+        if (this.router.url.includes('login') == false) {
+          if (this.isLoggedIn == false) {
+            this.router.navigateByUrl('/login')
+          }
         }
       }
       //console.log('LoginSuperGuardService routerEvent', routerEvent);
