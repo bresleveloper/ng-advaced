@@ -76,20 +76,26 @@ usage: see `comps/mat`
 
 `ng generate pipe ...`
 
+see `comps/dir`
+
 ## directives
 3 types of directives are:
-
+* component directive
+* structural directive
+* attribute directive
 
 `ng generate directive ...`
 
+see `comps/dir`
 
 
-## debug angular
 
-## rxjs
+
 
 ## forms / reactive forms
 
+## rxjs
 
+## debug angular
 
 

@@ -24,6 +24,7 @@ import { MyPipePipe } from './comps/dirs/my-pipe.pipe';
 import { PipeExampleComponent } from './comps/dirs/pipe-example/pipe-example.component';
 import { YearToAgePipe } from './comps/dirs/year-to-age.pipe';
 import { HighlightDirective } from './comps/dirs/highlight.directive';
+import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { HighlightDirective } from './comps/dirs/highlight.directive';
     MyPipePipe,
     PipeExampleComponent,
     YearToAgePipe,
-    HighlightDirective
+    HighlightDirective,
+    RouterDaddyComponent
   ],
   imports: [
     BrowserModule,

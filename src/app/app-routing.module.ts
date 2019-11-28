@@ -22,36 +22,44 @@ import { TestCompsComponent } from './comps/mat/test-comps/test-comps.component'
 import { SchFormComponent } from './comps/mat/sch-form/sch-form.component';
 import { SchDashboard2Component } from './comps/mat/sch-dashboard2/sch-dashboard2.component';
 import { PipeExampleComponent } from './comps/dirs/pipe-example/pipe-example.component';
+import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'chocolate', component: ChcolateComponent },
-  { 
-    path: 'ice-cream', 
-    component: IceCreamComponent,
-    canActivate: [CanActivateIceCreamService] 
-  },
 
-  { path: 'user/:moo', component: JsonAppUserComponent },
-  { 
-    path: 'data-title', 
-    component: DataTitleComponent,
-    data: { shuki: 'Heroes List 2', cow:'moo' } 
-  },
-
-  { path: 'pizza', component: PizzaMenuComponent,
-    children: [
-      { path: '', redirectTo: 'muzzarela', pathMatch: 'full' },
-      { path: 'muzzarela', component: PizzaMuzarellaComponent },
-      { path: 'shrooms', component: PizzaMushrommsComponent },
-      { path: 'da-good-stuf', component: PizzaGreenComponent }
+  { path: 'router-daddy', 
+    component: RouterDaddyComponent,
+    children:[
+      { path: 'login', component: LoginComponent },
+      { path: 'chocolate', component: ChcolateComponent },
+      { 
+        path: 'ice-cream', 
+        component: IceCreamComponent,
+        canActivate: [CanActivateIceCreamService] 
+      },
+      { path: 'user/:moo', component: JsonAppUserComponent },
+      { 
+        path: 'data-title', 
+        component: DataTitleComponent,
+        data: { shuki: 'Heroes List 2', cow:'moo' } 
+      },
+      { path: 'pizza', component: PizzaMenuComponent,
+        children: [
+          { path: '', redirectTo: 'muzzarela', pathMatch: 'full' },
+          { path: 'muzzarela', component: PizzaMuzarellaComponent },
+          { path: 'shrooms', component: PizzaMushrommsComponent },
+          { path: 'da-good-stuf', component: PizzaGreenComponent }
+        ]
+      },
     ]
   },
 
-
-  { path: 'mat-test', component: TestCompsComponent, },
-  { path: 'mat-dashboard', component: SchDashboard2Component, },
-  { path: 'mat-form', component: SchFormComponent, },
+  { path: 'mat-test', 
+    component: TestCompsComponent, 
+    children:[
+      { path: 'mat-dashboard', component: SchDashboard2Component, },
+      { path: 'mat-form', component: SchFormComponent, },
+    ]
+  },
 
   { path: 'pipe', component: PipeExampleComponent, },
 
