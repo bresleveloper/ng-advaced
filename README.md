@@ -6,8 +6,8 @@ in this project we will learn
 * routing 
 * router-guard 
 * material module
-* directives
 * pipes
+* directives
 * forms / reactive forms
 * rxjs
 * debug angular
@@ -56,11 +56,32 @@ my implementation in `services/guards/login-super-guard.service.ts`
 
 a big pretty module with material design components, here are installation examples
 
+* goto `https://material.angular.io/`
+* click `get started`
+* do install instructions `ng add @angular/material`
+* choose a color theme (ng8+), y, y
+* goto a component in the website, find example, click open in blitz
+* copy-paste the file `material-module.ts` to a folder named `modules` (you need to create it)
+* import in `app.module.ts` and use in `import`
+
+usage: see `comps/mat` 
+
+
+[schematics](https://material.angular.io/guide/schematics) examples: 
+* `ng generate @angular/material:address-form comps/mat/sch-form`
+* `ng generate @angular/material:dashboard comps/mat/sch-dashboard`
+
+
+## pipes
+
+`ng generate pipe ...`
+
 ## directives
 3 types of directives are:
 
 
-## pipes
+`ng generate directive ...`
+
 
 
 ## debug angular

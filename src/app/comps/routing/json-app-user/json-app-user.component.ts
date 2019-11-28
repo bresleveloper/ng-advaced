@@ -20,13 +20,16 @@ export class JsonAppUserComponent implements OnInit {
   ngOnInit() {
     console.log('activatedRoute', this.activatedRoute);
     console.log('router', this.router);
-
+    
     this.activatedRoute.params.subscribe(prmz =>{
       console.log('JsonAppUserComponent ActivatedRoute params', prmz);
       let userid = prmz.moo
 
       this.http.get(this.api + userid)
-        .subscribe(u => this.user = u)
+        .subscribe(u =>{
+          this.user = u
+          //sendign user to bla bla
+        })
     })
   }
 

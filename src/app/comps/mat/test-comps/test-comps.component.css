@@ -1,0 +1,10 @@
+
+
+.move-badge.mat-badge-medium.mat-badge-overlap.mat-badge-after 
+.mat-badge-content{
+    right: -23px;
+}
+
+.move-badge{color: deeppink;}
+
+mat-form-field{background: black;}
