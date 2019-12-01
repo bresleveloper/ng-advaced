@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { MatModule } from './module/mat.module'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +25,9 @@ import { PipeExampleComponent } from './comps/dirs/pipe-example/pipe-example.com
 import { YearToAgePipe } from './comps/dirs/year-to-age.pipe';
 import { HighlightDirective } from './comps/dirs/highlight.directive';
 import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.component';
+import { RawSearchPipe } from './comps/dirs/raw-search.pipe';
+import { SimpleComponent } from './comps/forms/simple/simple.component';
+import { FormsNaviComponent } from './comps/forms/forms-navi/forms-navi.component';
 
 
 @NgModule({
@@ -46,7 +49,10 @@ import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.
     PipeExampleComponent,
     YearToAgePipe,
     HighlightDirective,
-    RouterDaddyComponent
+    RouterDaddyComponent,
+    RawSearchPipe,
+    SimpleComponent,
+    FormsNaviComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +60,7 @@ import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.
     HttpClientModule,
     BrowserAnimationsModule,
     MatModule,
+    FormsModule,
     ReactiveFormsModule,
  
   ],

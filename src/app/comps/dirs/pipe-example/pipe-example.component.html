@@ -1,6 +1,12 @@
 <p>pipe-example works!</p>
 
 
+
+<div class="input-padder"> 
+    <h1>rawSearch - RawSearchPipe</h1>
+    <label>Search:</label>
+    <input (input)="search = $event.target.value"/>
+</div>
 <table border="1">
     <tr>
         <th>name</th>
@@ -8,10 +14,44 @@
         <th>age by fn</th>
         <th appHighlight>age by pipe</th>
     </tr>
-    <tr *ngFor="let p of pupils">
+    <tr *ngFor="let p of pupils | rawSearch : search">
+        <td>{{ p.name }}</td>
+        <td appHighlight="green" enlarge="true">
+            {{ p.birthYear }}
+        </td>
+        <td appHighlight="yellow">{{ ageByFn(p.birthYear) }}</td>
+        <td appHighlight="violet">{{ p.birthYear | yearToAge }}</td>
+    </tr>
+</table>
+
+<div class="space"></div>
+
+
+<hr>
+<hr>
+<hr>
+
+
+<div class="input-padder"> 
+    <h1>local search - component fn</h1>
+    <label>Search:</label>
+    <input (input)="searchLocal($event.target.value)"/>
+</div>
+
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>birthYear</th>
+        <th>age by fn</th>
+        <th appHighlight>age by pipe</th>
+    </tr>
+    <tr *ngFor="let p of pupilsLocalFiltered">
         <td>{{ p.name }}</td>
         <td appHighlight="green">{{ p.birthYear }}</td>
         <td appHighlight="yellow">{{ ageByFn(p.birthYear) }}</td>
         <td appHighlight="violet">{{ p.birthYear | yearToAge }}</td>
     </tr>
 </table>
+    
+
+<div class="space"></div>

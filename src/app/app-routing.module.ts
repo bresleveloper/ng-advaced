@@ -23,6 +23,8 @@ import { SchFormComponent } from './comps/mat/sch-form/sch-form.component';
 import { SchDashboard2Component } from './comps/mat/sch-dashboard2/sch-dashboard2.component';
 import { PipeExampleComponent } from './comps/dirs/pipe-example/pipe-example.component';
 import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.component';
+import { SimpleComponent } from './comps/forms/simple/simple.component';
+import { FormsNaviComponent } from './comps/forms/forms-navi/forms-navi.component';
 
 const routes: Routes = [
 
@@ -63,9 +65,16 @@ const routes: Routes = [
 
   { path: 'pipe', component: PipeExampleComponent, },
 
+  { path: 'forms', component:FormsNaviComponent,
+    children:[
+      { path: '', redirectTo: 'simple', pathMatch: 'full' },
+      { path: 'simple', component: SimpleComponent, },
+    ]
+  },
+
 
   //{ path: '', redirectTo: '/chocolate', pathMatch: 'full'},
-  { path: '', redirectTo: '/pipe', pathMatch: 'full'},
+  { path: '', redirectTo: '/forms/simple', pathMatch: 'full'},
   //{ path: '**', component: PageNotFoundComponent }
   { path: '**', redirectTo: '/chocolate', pathMatch: 'full'},
 ];

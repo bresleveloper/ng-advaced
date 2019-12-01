@@ -1,0 +1,40 @@
+<p>simple works!</p>
+
+
+<form>
+    name: <input [formControl]="name">
+    <br>
+    phone:<input [formControl]="phone">
+    <br>
+    <button type="button" (click)="addLead()">submit</button>
+</form>
+
+<table id="table" border="1">
+    <tr>
+        <th>name</th>
+        <th>phone</th>
+    </tr>
+    <tr *ngFor="let l of newLeads">
+        <th>{{l.name}}</th>
+        <th>{{l.phone}}</th>
+    </tr>
+</table>
+
+
+<hr>
+<hr>
+
+
+<div>
+    name of sheep: <input [formControl]="sheep">
+    <br>
+    <button type="button" (click)="DefaultSheepName()">
+        set Default Sheep Value
+    </button>
+</div>
+<div>
+    name of sheep: {{sheep.value}}
+</div>
+
+
+      
