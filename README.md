@@ -103,6 +103,11 @@ see `comps/dir`
 * Validators - `Validators\Validators`
 * Form Array - `form-array\form-array`
 
+more about form array
+* [angular.io](https://angular.io/guide/reactive-forms#dynamic-controls-using-form-arrays)
+* [alligator.io](https://alligator.io/angular/reactive-forms-formarray-dynamic-fields/)
+
+
 ## rxjs
 
 ## debug angular
