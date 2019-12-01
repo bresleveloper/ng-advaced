@@ -1,0 +1,37 @@
+<p>contact-us-table works!</p>
+
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>subject</th>
+            <th>content</th>
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>adrress</th>
+            <th>credit</th>
+            <th>gender</th>
+            <th>hasidut</th>
+            <th>age</th>
+            <th>whatsapp</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let c of svc.contactList">
+            <td>{{c.subject}}</td>
+            <td>{{c.content}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.phone}}</td>
+            <td>{{c.adrress}}</td>
+            <td>{{c.credit}}</td>
+            <td>{{c.gender}}</td>
+            <td>{{c.hasidut}}</td>
+            <td>{{c.age}}</td>
+            <td>{{c.whatsapp}}</td>
+        </tr>
+    </tbody>
+</table>
+

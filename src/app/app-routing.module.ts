@@ -25,7 +25,8 @@ import { PipeExampleComponent } from './comps/dirs/pipe-example/pipe-example.com
 import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.component';
 import { SimpleComponent } from './comps/forms/simple/simple.component';
 import { FormsNaviComponent } from './comps/forms/forms-navi/forms-navi.component';
-
+import { FormGroupContactUsComponent } from './comps/forms/form-group-contact-us/form-group-contact-us.component';
+ 
 const routes: Routes = [
 
   { path: 'router-daddy', 
@@ -69,6 +70,8 @@ const routes: Routes = [
     children:[
       { path: '', redirectTo: 'simple', pathMatch: 'full' },
       { path: 'simple', component: SimpleComponent, },
+      { path: 'group', component: FormGroupContactUsComponent, },
+      
     ]
   },
 

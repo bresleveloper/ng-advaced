@@ -28,6 +28,8 @@ import { RouterDaddyComponent } from './comps/routing/router-daddy/router-daddy.
 import { RawSearchPipe } from './comps/dirs/raw-search.pipe';
 import { SimpleComponent } from './comps/forms/simple/simple.component';
 import { FormsNaviComponent } from './comps/forms/forms-navi/forms-navi.component';
+import { FormGroupContactUsComponent } from './comps/forms/form-group-contact-us/form-group-contact-us.component';
+import { ContactUsTableComponent } from './comps/forms/contact-us-table/contact-us-table.component';
 
 
 @NgModule({
@@ -52,7 +54,9 @@ import { FormsNaviComponent } from './comps/forms/forms-navi/forms-navi.componen
     RouterDaddyComponent,
     RawSearchPipe,
     SimpleComponent,
-    FormsNaviComponent
+    FormsNaviComponent,
+    FormGroupContactUsComponent,
+    ContactUsTableComponent,
   ],
   imports: [
     BrowserModule,
