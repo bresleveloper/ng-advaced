@@ -12,6 +12,7 @@ in this project we will learn
 * rxjs
 * debug angular
 
+you can see our app [in GHP](https://bresleveloper.github.io/ng-advaced/)
 
 ## more resources
 
