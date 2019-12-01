@@ -34,6 +34,7 @@ import { FormGroupNestedComponent } from './comps/forms/form-group-nested/form-g
 import { CityByCountryComponent } from './comps/forms/city-by-country/city-by-country.component';
 import { FormBuilderComponent } from './comps/forms/form-builder/form-builder.component';
 import { ValidatorsComponent } from './comps/forms/validators/validators.component';
+import { FormArrayComponent } from './comps/forms/form-array/form-array.component';
 
 
 @NgModule({
@@ -65,6 +66,7 @@ import { ValidatorsComponent } from './comps/forms/validators/validators.compone
     CityByCountryComponent,
     FormBuilderComponent,
     ValidatorsComponent,
+    FormArrayComponent,
   ],
   imports: [
     BrowserModule,

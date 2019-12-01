@@ -1,0 +1,59 @@
+<p>form-array works!</p>
+
+
+
+
+<form [formGroup]="newStudentForm" 
+    (ngSubmit)="newStudentForm_onSubmit()">
+
+    <label>firstName: </label><input formControlName="firstName"><br>
+    <label>lastName: </label><input formControlName="lastName"><br>
+    <label>year: </label><input formControlName="year"><br>
+
+    <div formArrayName="addressArr" >
+        <div [formGroup]="LastAddressFormGroup" *ngIf="LastAddressFormGroup">
+            <h3>Address</h3>
+
+            <label>country: </label>
+            <select  (change)="setCities($event.target.value)"
+                    formControlName="country">
+                <option [value]="c1" *ngFor="let c1 of getCountries()">
+                    {{c1}}
+                </option>
+            </select><br>
+
+            <label>city: </label>
+            <select formControlName="city">
+                <option [value]="c2" 
+                    *ngFor="let c2 of citiesByCountry">
+                    {{c2}}
+                </option>
+            </select><br>
+
+            <label>street: </label>
+            <input formControlName="street"><br>
+
+            <label>appartment: </label>
+            <input formControlName="appartment"><br>
+
+            <label>houseNumber: </label>
+            <input formControlName="houseNumber"><br>
+
+            <button type="button" (click)="addAddress()">add address</button>
+        </div> 
+    </div>
+
+    <table border="1">
+        <tr *ngFor="let addr of formAddressData.controls; let i = index;">
+            <td>{{addr.controls.country.value}}</td>
+            <td>{{addr.controls.city.value}}</td>
+            <td>{{addr.controls.street.value}}</td>
+            <td>{{addr.controls.appartment.value}}</td>
+            <td>{{addr.controls.houseNumber.value}}</td>
+        </tr>
+    </table>
+
+    <button>submit</button>
+</form>
+
+

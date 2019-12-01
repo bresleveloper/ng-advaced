@@ -30,6 +30,7 @@ import { FormGroupNestedComponent } from './comps/forms/form-group-nested/form-g
 import { CityByCountryComponent } from './comps/forms/city-by-country/city-by-country.component';
 import { FormBuilderComponent } from './comps/forms/form-builder/form-builder.component';
 import { ValidatorsComponent } from './comps/forms/validators/validators.component';
+import { FormArrayComponent } from './comps/forms/form-array/form-array.component';
  
 const routes: Routes = [
 
@@ -79,6 +80,9 @@ const routes: Routes = [
       { path: 'selects', component: CityByCountryComponent, },
       { path: 'form-builder', component: FormBuilderComponent, },
       { path: 'Validators', component: ValidatorsComponent, },
+      { path: 'form-array', component: FormArrayComponent, },
+
+      
     ]
   },
 

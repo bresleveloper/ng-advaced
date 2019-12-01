@@ -96,14 +96,21 @@ see `comps/dir`
 
 #### each subject in its own route\component
 
-* FormControl - `simple\simple`
-* FormGroup and saving - `group\form-group-contact-us`
+* Form Control - `simple\simple`
+* Form Group and saving - `group\form-group-contact-us`
 * Nested - `nested\form-group-nested`
-* FormBuilder - `form-builder\form-builder`
+* Form Builder - `form-builder\form-builder`
 * Validators - `Validators\Validators`
+* Form Array - `form-array\form-array`
 
 ## rxjs
 
 ## debug angular
 
 
+
+
+
+### my build
+
+`ng build --prod --base-href "http://bresleveloper.github.io/ng-advanced/"`
