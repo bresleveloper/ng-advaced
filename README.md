@@ -113,4 +113,4 @@ see `comps/dir`
 
 ### my build
 
-`ng build --prod --base-href "http://bresleveloper.github.io/ng-advanced/"`
+`ng build --prod --base-href "https://bresleveloper.github.io/ng-advaced/"`
