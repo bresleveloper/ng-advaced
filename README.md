@@ -94,6 +94,14 @@ see `comps/dir`
 
 ## forms / reactive forms
 
+#### each subject in its own route\component
+
+* FormControl - `simple\simple`
+* FormGroup and saving - `group\form-group-contact-us`
+* Nested - `nested\form-group-nested`
+* FormBuilder - `form-builder\form-builder`
+* Validators - `Validators\Validators`
+
 ## rxjs
 
 ## debug angular

@@ -1,0 +1,34 @@
+<p>form-group-nested works!</p>
+
+
+
+<form [formGroup]="newStudentForm" 
+    (ngSubmit)="newStudentForm_onSubmit()">
+
+    <label>firstName: </label><input formControlName="firstName"><br>
+    <label>lastName: </label><input formControlName="lastName"><br>
+    <label>year: </label><input formControlName="year"><br>
+
+    <div formGroupName="address">
+        <h3>Address</h3>
+
+        <label>country: </label>
+        <input formControlName="country"><br>
+
+        <label>city: </label>
+        <input formControlName="city"><br>
+
+        <label>street: </label>
+        <input formControlName="street"><br>
+
+        <label>appartment: </label>
+        <input formControlName="appartment"><br>
+
+        <label>houseNumber: </label>
+        <input formControlName="houseNumber"><br>
+    </div>
+
+    <button>submit</button>
+</form>
+
+

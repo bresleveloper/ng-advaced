@@ -1,0 +1,26 @@
+.ng-valid {
+    color: green;
+}
+.ng-invalid{
+    color: red;
+}
+.ng-pending{
+    background: hotpink;
+}
+.ng-pristine{
+    background: lightblue;
+}
+.ng-dirty{
+    background: none;
+}
+.ng-untouched{
+    border: 1px solid ivory
+}
+.ng-touched{
+    border: 1px solid grey
+}
+
+
+.gogo-form > button {
+    font-size: 2em;
+}

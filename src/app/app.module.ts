@@ -30,6 +30,10 @@ import { SimpleComponent } from './comps/forms/simple/simple.component';
 import { FormsNaviComponent } from './comps/forms/forms-navi/forms-navi.component';
 import { FormGroupContactUsComponent } from './comps/forms/form-group-contact-us/form-group-contact-us.component';
 import { ContactUsTableComponent } from './comps/forms/contact-us-table/contact-us-table.component';
+import { FormGroupNestedComponent } from './comps/forms/form-group-nested/form-group-nested.component';
+import { CityByCountryComponent } from './comps/forms/city-by-country/city-by-country.component';
+import { FormBuilderComponent } from './comps/forms/form-builder/form-builder.component';
+import { ValidatorsComponent } from './comps/forms/validators/validators.component';
 
 
 @NgModule({
@@ -57,6 +61,10 @@ import { ContactUsTableComponent } from './comps/forms/contact-us-table/contact-
     FormsNaviComponent,
     FormGroupContactUsComponent,
     ContactUsTableComponent,
+    FormGroupNestedComponent,
+    CityByCountryComponent,
+    FormBuilderComponent,
+    ValidatorsComponent,
   ],
   imports: [
     BrowserModule,
